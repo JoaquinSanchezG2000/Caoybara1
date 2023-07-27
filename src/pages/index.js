@@ -7,9 +7,10 @@ import { Catalogo } from "@/Components/Catalogo";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export default function Home() {
   return (
-    <main >
+    <main>
       <Header></Header>
       <Carrousel></Carrousel>
       <Catalogo></Catalogo>

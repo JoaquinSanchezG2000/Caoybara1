@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
-import Link from "next/link";
 
-export default () => {
+
+ const Carrousel = () => {
   return (
     <Swiper
       className="mt-[8rem] w-[90%]  border-[2px] border-red-200"
@@ -30,3 +30,4 @@ export default () => {
     </Swiper>
   );
 };
+export default Carrousel
