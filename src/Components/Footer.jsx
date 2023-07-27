@@ -1,29 +1,29 @@
 import React from "react";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className="flex items-center p-10 mt-10 justify-around  w-full bg-white opacity-50 ">
       <div>
         <ul className="flex flex-col space-y-4 text-xl ">
           <li>
-            <a href="/">
+            <Link href={"/"}>
               <img src="/profile.png" className="w-[18rem] h-[6rem] p-4 cursor-pointer " alt="" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/catalogo" className="m-10  text-gray-600 hover:text-blue-300">
+            <Link href="/catalogo" className="m-10  text-gray-600 hover:text-blue-300">
               Catálogo
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contacto" className="m-10 text-gray-600 hover:text-blue-300">
+            <Link href="/contacto" className="m-10 text-gray-600 hover:text-blue-300">
               Contacto
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/informacion" className="m-10 text-gray-600 hover:text-blue-300">
+            <Link href="/informacion" className="m-10 text-gray-600 hover:text-blue-300">
               Información
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

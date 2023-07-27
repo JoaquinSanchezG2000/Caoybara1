@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   //https://paletton.com/#uid=13q0u0kboSe4L++4L++4zgo4zgo paleta de colores
   return (
@@ -5,25 +7,25 @@ const Header = () => {
       <div className=" bg-white  z-10 bg-opacity-50 fixed top-0 right-0 left-0   ">
         <nav className="flex  items-center justify-between   ">
           <div>
-            <a href="/">
+            <Link href="/">
               <img src="/profile.png" className="w-[18rem] h-[6rem] p-4 cursor-pointer " alt="" />
-            </a>
+            </Link>
           </div>
           <ul className="flex space-x-4 text-xl m-3">
             <li>
-              <a href="/catalogo" className="m-10  text-gray-600 hover:text-blue-300">
+              <Link href="/catalogo" className="m-10  text-gray-600 hover:text-blue-300">
                 Catálogo
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contacto" className="m-10 text-gray-600 hover:text-blue-300">
+              <Link href="/contacto" className="m-10 text-gray-600 hover:text-blue-300">
                 Contacto
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/informacion" className="m-10 text-gray-600 hover:text-blue-300">
+              <Link href="/informacion" className="m-10 text-gray-600 hover:text-blue-300">
                 Información
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
