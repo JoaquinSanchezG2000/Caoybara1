@@ -1,19 +1,18 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import "swiper/css/bundle";
 import "swiper/css/navigation";
-
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
 export default () => {
   return (
-    <Swiper className="mt-[8rem] w-[80%]"
+    <Swiper
+      className="mt-[8rem] w-[90%]  border-[2px] border-red-200"
+      modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay ]}
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={swiper => console.log(swiper)}
-      autoplay={{ delay: 300 }}
+      autoplay={{ delay: 4000 }}
       navigation
-      
     >
       <SwiperSlide>
         <img src="/remera1.jpg" alt="" />

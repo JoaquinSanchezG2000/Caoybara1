@@ -1,7 +1,7 @@
 const Header = () => {
   //https://paletton.com/#uid=13q0u0kboSe4L++4L++4zgo4zgo paleta de colores
   return (
-    <header className="  text-white bg-black z-10 ">
+    <header className="   bg-black z-10 ">
       <div className=" bg-white  z-10 bg-opacity-50 fixed top-0 right-0 left-0   ">
         <nav className="flex  items-center justify-between   ">
           <div>
